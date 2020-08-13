@@ -4,6 +4,9 @@
 
 `ngx-chatbot` is an Angular component for creating chat-box.It can be used to simulate chatbot.
 
+![](demo.gif)
+
+
 ## Demo
 
 https://codesandbox.io/s/ngx-chatbox-demo-50jxh
@@ -12,7 +15,7 @@ https://codesandbox.io/s/ngx-chatbox-demo-50jxh
 
 To use ngx-datatable in your project install it via [npm](https://www.npmjs.com/package/@swimlane/ngx-datatable):
 
-```
+```bash
 npm i ngx-chatbox
 ```
 
