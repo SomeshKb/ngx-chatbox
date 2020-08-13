@@ -1,27 +1,47 @@
 # NgxChatbox
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.29.
+[![npm version](https://badge.fury.io/js/ngx-chatbox.svg)](https://badge.fury.io/js/ngx-chatbox)
 
-## Development server
+`ngx-chatbot` is an Angular component for creating chat-box.It can be used to simulate chatbot.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+<iframe src="https://codesandbox.io/embed/elastic-rhodes-50jxh?fontsize=14&hidenavigation=1&theme=dark">
 
-## Code scaffolding
+## Installation
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+To use ngx-datatable in your project install it via [npm](https://www.npmjs.com/package/@swimlane/ngx-datatable):
 
-## Build
+```
+npm i ngx-chatbox
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Usage example
 
-## Running unit tests
+AppModule.ts
+```typescript
+import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from "@angular/core";
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+import { AppComponent } from "./app.component";
+import { NgxChatboxModule } from "ngx-chatbox";
+import { CommonModule } from "@angular/common";
+import { FormsModule } from "@angular/forms";
+@NgModule({
+  declarations: [AppComponent],
+  imports: [BrowserModule, NgxChatboxModule, CommonModule, FormsModule],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule {}
+```
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Working demo can be found below
+https://codesandbox.io/s/ngx-chatbox-demo-50jxh
+
+
+How 
+
+
+

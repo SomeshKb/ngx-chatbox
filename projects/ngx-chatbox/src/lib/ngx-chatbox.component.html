@@ -1,0 +1,59 @@
+<section class="noselect container">
+  <div id="chat_modal" class="hidden-chat">
+    <div class="chat">
+      <div chatConfig class="chat-header" *ngIf="chatConfig && (chatConfig.title || chatConfig.subTitle)  ">
+        <div class="chat-icon">
+          <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+        </div>
+        <p class="title" *ngIf="chatConfig.title">{{ chatConfig.title }}</p>
+        <p class="sub-title" *ngIf="chatConfig.subTitle">
+          {{ chatConfig.subTitle }}
+        </p>
+        <span (click)="closeDialog()" class="close-chat"
+          ><i class="fa fa-times"></i>
+        </span>
+      </div>
+      <div #autoScroll class="messages-content">
+        <div *ngFor="let msg of messages">
+          <label [ngClass]="msg.type == 'user' ? 'user-msg' : 'bot-msg'">
+            {{ msg.message }}</label
+          >
+        </div>
+        <div class="chat-typing" *ngIf="isBotActive">
+          <div class="chat-typing--bubbles">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+
+      <div class="message-box">
+        <input
+          type="text"
+          (keydown.enter)="pushData()"
+          [(ngModel)]="userMessage"
+          class="message-input"
+          placeholder="Type message..."
+        />
+        <div
+          type="submit"
+          class="noselect message-submit"
+          (click)="pushData()"
+        >
+          Send
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="float-buton-group noselect">
+    <div class="float-button" *ngIf="!isModalActive" (click)="showDialog()">
+      <i class="float-icon fa fa-comment"></i>
+    </div>
+    <div class="float-button" *ngIf="isModalActive" (click)="closeDialog()">
+      <i class="float-icon fa fa-times-circle"></i>
+    </div>
+  </div>
+</section>
