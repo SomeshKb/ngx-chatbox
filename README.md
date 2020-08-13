@@ -45,8 +45,8 @@ app.component.html
 <ngx-chatbox
   [chatConfig]="config"
   (onMessageInput)="getMessage($event)"
-  [serverResponse]="response"
-></ngx-chatbox>
+  [serverResponse]="response">
+  </ngx-chatbox>
 ```
 app.component.ts
 ```typescript
