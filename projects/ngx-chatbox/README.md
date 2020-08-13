@@ -1,24 +1,77 @@
 # NgxChatbox
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.14.
+[![npm version](https://badge.fury.io/js/ngx-chatbox.svg)](https://badge.fury.io/js/ngx-chatbox)
+[![GitHub issues](https://img.shields.io/github/issues/SomeshKb/ngx-chatbot)](https://github.com/SomeshKb/ngx-chatbot/issues)
+[![GitHub stars](https://img.shields.io/github/stars/SomeshKb/ngx-chatbot)](https://github.com/SomeshKb/ngx-chatbot/stargazers)
 
-## Code scaffolding
+`ngx-chatbot` is an Angular component for creating chat-box.It can be used to simulate chatbot.
 
-Run `ng generate component component-name --project ngx-chatbox` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ngx-chatbox`.
-> Note: Don't forget to add `--project ngx-chatbox` or else it will be added to the default project in your `angular.json` file. 
+![](demo.gif)
 
-## Build
 
-Run `ng build ngx-chatbox` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Demo
 
-## Publishing
+https://codesandbox.io/s/ngx-chatbox-demo-50jxh
 
-After building your library with `ng build ngx-chatbox`, go to the dist folder `cd dist/ngx-chatbox` and run `npm publish`.
+## Installation
 
-## Running unit tests
+To use ngx-datatable in your project install it via [npm](https://www.npmjs.com/package/@swimlane/ngx-datatable):
 
-Run `ng test ngx-chatbox` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```bash
+npm i ngx-chatbox
+```
 
-## Further help
+## Usage example
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+AppModule.ts
+```typescript
+import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from "@angular/core";
+
+import { AppComponent } from "./app.component";
+import { NgxChatboxModule } from "ngx-chatbox";
+import { CommonModule } from "@angular/common";
+import { FormsModule } from "@angular/forms";
+@NgModule({
+  declarations: [AppComponent],
+  imports: [BrowserModule, NgxChatboxModule, CommonModule, FormsModule],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule {}
+```
+app.component.html
+```
+<ngx-chatbox
+  [chatConfig]="config"
+  (onMessageInput)="getMessage($event)"
+  [serverResponse]="response">
+  </ngx-chatbox>
+```
+app.component.ts
+```typescript
+......
+export class AppComponent {
+  title = "chat-float";
+  response = "";
+  config = {
+    title: "ChatBot",
+    subTitle: "New Way of learning"
+  };
+  setData(message) {
+    this.response = message;
+  }
+  getMessage($event) {
+    console.log($event);
+  }
+}
+```
+
+## License
+
+[![GitHub license](https://img.shields.io/github/license/SomeshKb/ngx-chatbot)](https://github.com/SomeshKb/ngx-chatbot/blob/master/LICENSE)
+
+
+
+
+

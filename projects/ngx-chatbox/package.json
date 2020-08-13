@@ -1,6 +1,20 @@
 {
   "name": "ngx-chatbox",
-  "version": "0.0.6",
+  "version": "0.0.7",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SomeshKb/ngx-chatbot.git"
+  },
+  "keywords": [
+    "angular",
+    "angular8",
+    "chat",
+    "chatbot",
+    "chatbot"
+  ],
+  "author": "someshkumarbhaskar@gmail.com",
+  "license": "MIT",
+  "homepage": "https://github.com/SomeshKb/ngx-chatbot/blob/master/README.md",
   "peerDependencies": {
     "@angular/common": "^8.2.14",
     "@angular/core": "^8.2.14"
