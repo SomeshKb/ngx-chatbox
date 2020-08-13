@@ -4,7 +4,9 @@
 
 `ngx-chatbot` is an Angular component for creating chat-box.It can be used to simulate chatbot.
 
-<iframe src="https://codesandbox.io/embed/elastic-rhodes-50jxh?fontsize=14&hidenavigation=1&theme=dark">
+## Demo
+
+https://codesandbox.io/s/ngx-chatbox-demo-50jxh
 
 ## Installation
 
@@ -33,15 +35,35 @@ import { FormsModule } from "@angular/forms";
 })
 export class AppModule {}
 ```
+app.component.html
+```
+<ngx-chatbox
+  [chatConfig]="config"
+  (onMessageInput)="getMessage($event)"
+  [serverResponse]="response"
+></ngx-chatbox>
+```
+app.component.ts
+```typescript
+......
+export class AppComponent {
+  title = "chat-float";
+  response = "";
+  config = {
+    title: "ChatBot",
+    subTitle: "New Way of learning"
+  };
+  setData(message) {
+    this.response = message;
+  }
+  getMessage($event) {
+    console.log($event);
+  }
+}
+```
 
 
 
-
-Working demo can be found below
-https://codesandbox.io/s/ngx-chatbox-demo-50jxh
-
-
-How 
 
 
 
