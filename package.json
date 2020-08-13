@@ -9,6 +9,20 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SomeshKb/ngx-chatbot.git"
+  },
+  "keywords": [
+    "angular",
+    "angular8",
+    "chat",
+    "chatbot",
+    "chatbot"
+  ],
+  "author": "someshkumarbhaskar@gmail.com",
+  "license": "MIT",
+  "homepage": "https://github.com/SomeshKb/ngx-chatbot/blob/master/README.md",
   "private": true,
   "dependencies": {
     "@angular/animations": "~8.2.14",
