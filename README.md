@@ -52,7 +52,6 @@ app.component.html
 ```
 app.component.ts
 ```typescript
-......
 export class AppComponent {
   title = "chat-float";
   response = "";
