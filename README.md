@@ -17,7 +17,7 @@ https://codesandbox.io/s/ngx-chatbox-demo-50jxh
 
 ## Installation
 
-To use ngx-datatable in your project install it via [npm](https://www.npmjs.com/package/@swimlane/ngx-datatable):
+To use ngx-chatbox in your project install it via [npm](https://www.npmjs.com/package/ngx-chatbox):
 
 ```bash
 npm i ngx-chatbox
