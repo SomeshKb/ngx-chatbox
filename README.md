@@ -1,8 +1,10 @@
 # NgxChatbox
 
 [![npm version](https://badge.fury.io/js/ngx-chatbox.svg)](https://badge.fury.io/js/ngx-chatbox)
-[![GitHub issues](https://img.shields.io/github/issues/SomeshKb/ngx-chatbot)](https://github.com/SomeshKb/ngx-chatbot/issues)
+![npm](https://img.shields.io/npm/v/ngx-chatbox)
+![npm](https://img.shields.io/npm/dt/ngx-chatbox)
 [![GitHub stars](https://img.shields.io/github/stars/SomeshKb/ngx-chatbot)](https://github.com/SomeshKb/ngx-chatbot/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/SomeshKb/ngx-chatbot)](https://github.com/SomeshKb/ngx-chatbot/issues)
 
 `ngx-chatbot` is an Angular component for creating chat-box.It can be used to simulate chatbot.
 
